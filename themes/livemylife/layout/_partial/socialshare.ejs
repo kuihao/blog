@@ -1,11 +1,17 @@
 <!-- Social Social Share Post -->
 <!-- Docs:https://github.com/overtrue/share.js -->
 
-<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+<div class="social-share" data-initialized="true" data-disabled="tencent, douban, qzone, linkedin, google, diandian, qq" data-wechat-qrcode-helper="" align="center">
   <ul class="list-inline text-center social-share-ul">
     <li class="social-share-li">
       <a target="_blank" class="social-share-icon icon-twitter">
         <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <!-- facebook 超連結有問題 待修
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-facebook">
+        <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
       </a>
     </li>
     <li class="social-share-li">
@@ -18,11 +24,7 @@
         <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
       </a>
     </li>
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-qq">
-        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
+    -->
     <li class="social-share-li">
       <a target="_blank" class="social-share-icon" href="mailto:?subject=<%= page.title %>&body=Hi,I found this website and thought you might like it <%= config.url + config.root + page.path %>">
         <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>

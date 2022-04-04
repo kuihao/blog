@@ -11,13 +11,15 @@ author: Kuihao # 部落格作者
 # Internationalization (i18n) Setting
 language: # At present, only en、cn and tw are supported. You can customize the language，refer to `languages/en.yml`.
   - zh-TW
-  #- en
+  - en
+  #- tw
   #- cn
 langselect:
-  enable: False # true # If open, it will automatically generation lang-select button.This button can jump in articles in different languages, but the articles must have the same name.
+  enable: True # If open, it will automatically generation lang-select button.This button can jump in articles in different languages, but the articles must have the same name.
   options: # langselect button display options
-    zh-TW: 正體中文
-    #en: English
+    zh-TW: 正體中文 # themes/languages/<DirName> 必須於此相同，並且底下比須確實有文章首頁才會顯示
+    en: English
+    #tw: 正體中文
     #cn: 简体中文
 
 
@@ -240,10 +242,10 @@ pagination_dir: archives
 # hexo-generator-i18n config
 ## Docs: https://github.com/xcatliu/hexo-generator-index-i18n
 index_generator:
-  per_page: 10
-  pagination_dir: page
   path: ''
+  per_page: 10
   order_by: -date
+  pagination_dir: page
 
 archive_generator:
   enabled: false
@@ -301,7 +303,7 @@ tip:
 # Social Share Post
 ## Docs:https://github.com/overtrue/share.js
 ##
-socialshare: true
+socialshare: true # 大多是大陸社群
 
 
 # Viewer config
