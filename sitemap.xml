@@ -2,64 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2022/04/04/First-Artical/</loc>
+    <loc>https://kuihao.github.io/blog/404.html</loc>
     
     <lastmod>2022-04-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>https://kuihao.github.io/blog/about/index.html</loc>
     
-    <lastmod>2022-04-03</lastmod>
+    <lastmod>2022-04-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://kuihao.github.io/blog/archive/index.html</loc>
     
-    <lastmod>2022-04-03</lastmod>
+    <lastmod>2022-04-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/archive/index.html</loc>
+    <loc>https://kuihao.github.io/blog/categories/index.html</loc>
     
-    <lastmod>2022-04-03</lastmod>
+    <lastmod>2022-04-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://kuihao.github.io/blog/tags/index.html</loc>
     
-    <lastmod>2022-04-03</lastmod>
+    <lastmod>2022-04-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/404.html</loc>
+    <loc>https://kuihao.github.io/blog/2022/04/03/First-Artical/</loc>
     
     <lastmod>2022-04-03</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/2022/04/03/First-Artical/</loc>
+    <loc>https://kuihao.github.io/blog/2022/04/03/hello-world/</loc>
     
     <lastmod>2022-04-03</lastmod>
     
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/04/03/hello-world/</loc>
-    
-    <lastmod>2022-04-03</lastmod>
-    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://kuihao.github.io/blog</loc>
     <lastmod>2022-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -67,10 +74,10 @@
 
   
   <url>
-    <loc>http://example.com/tags/hello-world/</loc>
+    <loc>https://kuihao.github.io/blog/tags/hello-world/</loc>
     <lastmod>2022-04-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
 
