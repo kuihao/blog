@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kuihao.github.io/blog/2022/04/04/First-Artical/</loc>
+    
+    <lastmod>2022-04-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kuihao.github.io/blog/404.html</loc>
     
     <lastmod>2022-04-04</lastmod>
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://kuihao.github.io/blog/categories/index.html</loc>
+    <loc>https://kuihao.github.io/blog/archive/index.html</loc>
     
     <lastmod>2022-04-04</lastmod>
     
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://kuihao.github.io/blog/archive/index.html</loc>
+    <loc>https://kuihao.github.io/blog/categories/index.html</loc>
     
     <lastmod>2022-04-04</lastmod>
     

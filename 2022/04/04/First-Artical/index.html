@@ -101,10 +101,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://kuihao.github.io/blog/blog/zh-TW/">
+  <link rel="canonical" href="https://kuihao.github.io/blog/blog/2022/04/04/First-Artical/">
   <title>
     
-      Kuihao&#39;s Blog
+      Is Hexo awesome? Static website construction and maintenance - Kuihao&#39;s Blog
     
   </title>
 <meta name="generator" content="Hexo 6.1.0"></head>
@@ -191,7 +191,7 @@
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/blog/">首頁</a>
+            <a href="/blog/">HOME</a>
           </li>
 
           
@@ -201,7 +201,7 @@
           <li>
             <a href="/blog/about/">
               
-              關於
+              ABOUT
               
               
             </a>
@@ -212,7 +212,7 @@
           <li>
             <a href="/blog/archive/">
               
-              文庫
+              ARCHIVES
               
               
             </a>
@@ -223,7 +223,7 @@
           <li>
             <a href="/blog/categories/">
               
-              類別
+              CATEGORIES
               
               
             </a>
@@ -234,7 +234,7 @@
           <li>
             <a href="/blog/tags/">
               
-              標籤
+              TAGS
               
               
             </a>
@@ -245,36 +245,14 @@
           
           <li>
             <a class="popup-trigger">
-              <span class="search-icon"></span>搜尋</a>
+              <span class="search-icon"></span>SEARCH</a>
           </li>
           
 
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      正體中文
-    </span>
-    <select id="lang-select" data-canonical="zh-TW/index.html">
-      
-      
-      <option value="zh-TW"  selected >
-        正體中文
-      </option>
-      
-      <option value="en" >
-        English
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -336,9 +314,9 @@
     }
 
     header.intro-header {
-       /*config*/
-        background-image: var(--intro-header-background-image-url-home);
-        /* background-image: url('/blog/img/header_img/newhome_bg.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url(''); */
       
     }
 
@@ -356,10 +334,42 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>Kuihao&#39;s Blog</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">建置中...</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/blog/tags/#hello-world" title="hello-world">hello-world</a>
+              
+            </div>
+            <h1>Is Hexo awesome? Static website construction and maintenance</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Kuihao on
+              2022-04-04
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">1</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">223</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -400,220 +410,322 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h1>Static website <strong>Hexo</strong></h1>
+<blockquote>
+<p>Hexo is a static website framework that helps authors quickly build professional-looking blogs<br>
+Hexo’s articles are written in markdown syntax<br>
+<a target="_blank" rel="noopener" href="https://israynotarray.com/hexo/20200914/3741834499/">Reference: Try to learn Hexo</a></p>
+</blockquote>
+<h2 id="Environmental-Construction">Environmental Construction</h2>
+<ol>
+<li>Install <a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows">nvm</a>
+<blockquote>
+<p><strong>NVM</strong>: <strong>N</strong>ode.js <strong>V</strong>ersion <strong>M</strong>anager</p>
+</blockquote>
+</li>
+<li>nvm install Node.js <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install latest 64</span><br></pre></td></tr></table></figure>
+</li>
+<li>nvm activate node.js
+<ul>
+<li>Normal Activation:  <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">nvm</span> <span class="literal">on</span></span><br></pre></td></tr></table></figure>
+The following message is displayed to indicate normal activation:  <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">nvm</span> enabled</span><br><span class="line"><span class="attribute">Now</span> using node v17.<span class="number">8</span>.<span class="number">0</span> (<span class="number">64</span>-bit)</span><br></pre></td></tr></table></figure>
+</li>
+<li><strong>troubleshooting</strong>:<br>
+Use command <code>nvm on</code> or <code>nvm use latest 64</code>, but show up:  <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span> status <span class="number">1</span>: �s���Q�ڡC</span><br></pre></td></tr></table></figure>
+This is due to <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41715885/article/details/120449480">insufficient privileges</a>, please open it with administrator privileges.</li>
+</ul>
+</li>
+<li>View the node.js version after nvm is activated <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">node</span> <span class="title">--version</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>nvm install Hexo <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>View Hexo version <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo -v</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Start-Hexo">Start Hexo</h2>
+<ol>
+<li>Buold Hexo website project<br>
+Generate hexo web directory in current directory</li>
+</ol>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">init</span> &lt;myblog: <span class="type">DirName</span>&gt;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Create the first article</li>
+</ol>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;first-artical&quot;</span></span><br></pre></td></tr></table></figure>
+<p>You can see the <a target="_blank" rel="noopener" href="http://first-artical.md">first-artical.md</a> generated in the source/_post directory</p>
+<h2 id="Preview-blogs-Hexo-compilation-built-in-Web-Server-and-other-important-commands">Preview blogs: Hexo compilation, built-in Web Server, and other important commands</h2>
+<blockquote>
+<p>Ref.: <a target="_blank" rel="noopener" href="https://israynotarray.com/hexo/20200919/55362084/">The Hexo command you can’t forget</a></p>
+</blockquote>
+<ol>
+<li>Compile and generate web files <figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">generate</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>Activate Hexo web server <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">server</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>Other abort and clear related commands<br>
+Clear cache files: Clear cache files (db.json) and compiled files (public) <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/blog/2022/04/03/First-Artical/" data-toggle="tooltip" data-placement="top" title="Hexo 很棒嗎? 靜態網站建置與維護">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      This theme was originally designed by v-vincen called Live My Life, if you like it you can find the source on Github (https://github.com/V-Vincen/hexo-theme-livemylife).
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent, douban, qzone, linkedin, google, diandian, qq" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <!-- facebook 超連結有問題 待修
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-facebook">
+        <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    -->
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=Is Hexo awesome? Static website construction and maintenance&body=Hi,I found this website and thought you might like it https://kuihao.github.io/blog/blog/2022/04/04/First-Artical/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/blog/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Mon Apr 04 2022 11:50:00 GMT+0000', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Static website Hexo</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Environmental-Construction"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">Environmental Construction</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Start-Hexo"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Start Hexo</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Preview-blogs-Hexo-compilation-built-in-Web-Server-and-other-important-commands"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">Preview blogs: Hexo compilation, built-in Web Server, and other important commands</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
     
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
+
+
+      <!-- Sidebar Container -->
+      <div class="
                 col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-      <!-- Main Content -->
-
-
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/blog/2022/04/03/First-Artical/">
-    <h2 class="post-title">
-      Hexo 很棒嗎? 靜態網站建置與維護
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      靜態網站 Hexo
-
-Hexo 是靜態網站框架，可以協助作者快速建立專業好看的部落格
-Hexo 的文章使用 markdown 語法撰寫
-內文參考: 試著學 Hexo
-
-環境建置
-
-安裝 Node.js 環境: nvm 環境管理
-
-NVM: Node.js Version Manager
-
-
-nvm 安裝 Node.js 1nvm install latest 64
-
-nvm 啟用 node.......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Kuihao on
-    2022-04-03
-  </p>
-  <div class="tags">
-    
-    <a href="/blog/tags/#hello-world" title="hello-world">hello-world</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/blog/2022/04/03/hello-world/">
-    <h2 class="post-title">
-      Hello World
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Kuihao on
-    2022-04-03
-  </p>
-  <div class="tags">
-    
-  </div>
-  
-
-</div>
-<hr>
-
-
-  <!-- Pager -->
-  <ul class="pager">
-    
-    
-  </ul>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/blog/about/">關於我</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/blog/img/avatar/photo.png" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Expertise in information technology and tourism. Student from Taiwan. =w=</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/Kuihao">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
         <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/blog/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/blog/tags/#hello-world" title="hello-world">hello-world</a>
+            
+          </div>
+        </section>
+        
 
-<section>
-  <h5><a href="/blog/tags/">特色標籤</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/blog/tags/#hello-world" title="hello-world" rel="2">hello-world</a>
-    
-    
-  </div>
-</section>
-
-
+        <!-- Friends Blog -->
+        
         <hr>
-    
-        <!-- RECENT POSTS -->
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
 
-<h5><a href="/blog/">最新貼文</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../2022/04/04/First-Artical/">
-      <li>Is Hexo awesome? Static website construction and maintenance</li>
-    </a>
-    
-    <a href="../2022/04/03/First-Artical/">
-      <li>Hexo 很棒嗎? 靜態網站建置與維護</li>
-    </a>
-    
-    <a href="../2022/04/03/hello-world/">
-      <li>Hello World</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-
-    
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
@@ -778,7 +890,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
             <span class="search-icon">
               <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
             </span>
-            <input autocomplete="off" placeholder="搜尋..." type="text" id="local-search-input">
+            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
           </div>
         </div>
         <div id="local-search-result"></div>
