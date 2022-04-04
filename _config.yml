@@ -384,4 +384,4 @@ theme: livemylife
 deploy:
   type: git
   repo: https://github.com/kuihao/blog # or https://gitee.com/<yourAccount>/<repo>
-  branch: gh-pages
+  branch: gh-pages # https://hexo.io/zh-tw/docs/github-pages.html
