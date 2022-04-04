@@ -25,7 +25,7 @@ langselect:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://kuihao.github.io/blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -44,7 +44,7 @@ pretty_urls:
 # Custom Setting Start
 
 # Site settings
-SEOTitle: hexo
+SEOTitle: Kuihao's Blog
 email: kuihao.backup2@gmail.com
 description: "Personal Blog" # 部落格描述
 keyword: "AI,FL,Python,C,C++,kuihao,Blog" # 部落格關鍵字
@@ -383,5 +383,5 @@ theme: livemylife
 ##
 deploy:
   type: git
-  repo: https://github.com/<yourAccount>/<repo> # or https://gitee.com/<yourAccount>/<repo>
-  branch: <your-branch>
+  repo: https://github.com/kuihao/blog # or https://gitee.com/<yourAccount>/<repo>
+  branch: gh-pages
