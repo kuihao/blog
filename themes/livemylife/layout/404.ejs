@@ -37,6 +37,11 @@ layout: layout
                     <h1>404</h1>
                     <!--<hr class="small">-->
                     <span class="subheading"><%= page.description || config.subtitle || "" %></span>
+                    <% if(config.subtitle_link_1 && !(page.description)) { %>
+                      <a class="subheading" href="https://hackmd.io/@Kuihao" target="_blank" style="color:#b0fcff;">
+                        <% config.subtitle_link_1 || "" %>
+                      </a>
+                    <% } %>
                 </div>
             </div>
         </div>
