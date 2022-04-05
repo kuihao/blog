@@ -297,20 +297,19 @@
 
 
 		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
-		<!-- Modified by Yu-Hsuan Yen -->
-<!-- Post Header -->
+		<!-- Post Header -->
 
   <style type="text/css">
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/blog/img/header_img/Taiwan_signed.jpg');
       --intro-header-background-image-url-post: url('');
-      --intro-header-background-image-url-page: url('/blog/img/header_img/eng_magzine.JPG');
+      --intro-header-background-image-url-page: url('/blog/img/header_img/eng_magzine_shrink.JPG');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/Taiwan_signed.jpg');
       --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/eng_magzine.JPG');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/eng_magzine_shrink.JPG');
     }
 
     header.intro-header {
@@ -418,6 +417,9 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
+        <!-- Modify by Kuihao Chang -->
+        
+        <!-- The original markdown content -->
         <h1>Static website <strong>Hexo</strong></h1>
 <blockquote>
 <p>Hexo is a static website framework that helps authors quickly build professional-looking blogs<br>
@@ -474,36 +476,24 @@ Generate hexo web directory in current directory</li>
 Clear cache files: Clear cache files (db.json) and compiled files (public) <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 
-
+        
         <hr>
         <!-- Pager -->
         <ul class="pager">
           
           <li class="previous">
-            <a href="/blog/2022/04/05/Sigmoid-derive-Softmax/" data-toggle="tooltip" data-placement="top" title="Sigmoid 推導至 Softmax">&larr; Previous Post</a>
+            <a href="/blog/2022/04/05/Sigmoid-derive-Softmax/" data-toggle="tooltip" data-placement="top"
+              title="Sigmoid 推導至 Softmax">&larr; Previous Post</a>
           </li>
           
           
           <li class="next">
-            <a href="/blog/2022/04/03/First-Artical/" data-toggle="tooltip" data-placement="top" title="Hexo 很棒嗎? 靜態網站建置與維護">Next Post &rarr;</a>
+            <a href="/blog/2022/04/03/First-Artical/" data-toggle="tooltip" data-placement="top"
+              title="Hexo 很棒嗎? 靜態網站建置與維護">Next Post &rarr;</a>
           </li>
           
         </ul>
 
-        
-        <!-- tip start -->
-        <!-- tip -->
-<!-- tip start -->
-<div class="tip">
-  <p>
-    
-      This theme was originally designed by v-vincen called Live My Life, if you like it you can find the source on Github (https://github.com/V-Vincen/hexo-theme-livemylife).
-    
-  </p>
-</div>
-<!-- tip end -->
-
-        <!-- tip end -->
         
 
         
@@ -729,7 +719,6 @@ Clear cache files: Clear cache files (db.json) and compiled files (public) <figu
 </style>
 
 <!-- anchorjs end -->
-
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->

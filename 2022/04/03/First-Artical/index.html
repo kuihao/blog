@@ -297,20 +297,19 @@
 
 
 		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
-		<!-- Modified by Yu-Hsuan Yen -->
-<!-- Post Header -->
+		<!-- Post Header -->
 
   <style type="text/css">
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/blog/img/header_img/Taiwan_signed.jpg');
       --intro-header-background-image-url-post: url('');
-      --intro-header-background-image-url-page: url('/blog/img/header_img/eng_magzine.JPG');
+      --intro-header-background-image-url-page: url('/blog/img/header_img/eng_magzine_shrink.JPG');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/Taiwan_signed.jpg');
       --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/eng_magzine.JPG');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/eng_magzine_shrink.JPG');
     }
 
     header.intro-header {
@@ -418,6 +417,9 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
+        <!-- Modify by Kuihao Chang -->
+        
+        <!-- The original markdown content -->
         <h1>靜態網站 Hexo</h1>
 <blockquote>
 <p>Hexo 是靜態網站框架，可以協助作者快速建立專業好看的部落格<br>
@@ -474,36 +476,24 @@ Hexo 的文章使用 markdown 語法撰寫<br>
 清除暫存檔案: 清除快取檔案 (db.json) 以及編譯檔案 (public) <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 
-
+        
         <hr>
         <!-- Pager -->
         <ul class="pager">
           
           <li class="previous">
-            <a href="/blog/2022/04/04/First-Artical/" data-toggle="tooltip" data-placement="top" title="Is Hexo awesome? Static website construction and maintenance">&larr; Previous Post</a>
+            <a href="/blog/2022/04/04/First-Artical/" data-toggle="tooltip" data-placement="top"
+              title="Is Hexo awesome? Static website construction and maintenance">&larr; Previous Post</a>
           </li>
           
           
           <li class="next">
-            <a href="/blog/2022/04/03/hello-world/" data-toggle="tooltip" data-placement="top" title="Hello World">Next Post &rarr;</a>
+            <a href="/blog/2022/04/03/hello-world/" data-toggle="tooltip" data-placement="top"
+              title="Hello World">Next Post &rarr;</a>
           </li>
           
         </ul>
 
-        
-        <!-- tip start -->
-        <!-- tip -->
-<!-- tip start -->
-<div class="tip">
-  <p>
-    
-      本主題原形為 v-vincen 所設計的 Live My Life，若您也喜歡此主題，可以於 Github 找到出處。
-    
-  </p>
-</div>
-<!-- tip end -->
-
-        <!-- tip end -->
         
 
         
@@ -718,7 +708,6 @@ Hexo 的文章使用 markdown 語法撰寫<br>
 </style>
 
 <!-- anchorjs end -->
-
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
