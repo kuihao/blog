@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content="Personal Blog"/>
   <meta name="keyword" content="AI,FL,Python,C,C++,kuihao,Blog"/>
-  <link rel="shortcut icon" href="/blog/img/avatar/favicon.icos"/>
+  <link rel="shortcut icon" href="/blog/img/avatar/favicon.png"/>
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
@@ -428,22 +428,22 @@
   
   <!-- top start (article top hot config) -->
   
+  <div class="top">
+    <div class="iconfont icon-hot animated infinite tada"></div>
+  </div>
+  
   <!-- top end -->
   
 
   <a href="/blog/2022/04/05/Sigmoid-derive-Softmax/">
     <h2 class="post-title">
-      Untitled
+      Sigmoid 推導至 Softmax
     </h2>
     <h3 class="post-subtitle">
       
     </h3>
     <div class="post-content-preview">
       Sigmoid 推導至 Softmax
-:::info
-Latex 數學式: https://hackmd.io/@sysprog/B1RwlM85Z
-Hackmd 各種嵌入語法: https://hackmd.io/s/features-tw
-:::
 
 假設
 
@@ -452,7 +452,12 @@ Hackmd 各種嵌入語法: https://hackmd.io/s/features-tw
 
 Softmax:
 
-說明: 將C個實數轉換成 Multi-classes 的機率分佈，可由Si......
+說明: 將C個實數轉換成 Multi-classes 的機率分佈，可由Sigmoid推廣而成
+功能1: 輸入 C 個數值，輸出分數總和為 1 (即機率)
+功能2: exp() 可以使數值差距加大
+數學式: 機率 = Softmax( C 個數值 )
+
+$\sigma(x)j = \dfr......
     </div>
   </a>
   
@@ -461,6 +466,8 @@ Softmax:
     2022-04-05
   </p>
   <div class="tags">
+    
+    <a href="/blog/tags/#sigmoid softmax" title="sigmoid softmax">sigmoid softmax</a>
     
   </div>
   
@@ -627,6 +634,10 @@ Qu......
     <a href="/blog/tags/#hello-world" title="hello-world" rel="2">hello-world</a>
     
     
+    
+    <a href="/blog/tags/#sigmoid softmax" title="sigmoid softmax" rel="1">sigmoid softmax</a>
+    
+    
   </div>
 </section>
 
@@ -640,7 +651,7 @@ Qu......
   <ul>
     
     <a href="../2022/04/05/Sigmoid-derive-Softmax/">
-      <li>(no title)</li>
+      <li>Sigmoid 推導至 Softmax</li>
     </a>
     
     <a href="../2022/04/04/First-Artical/">
