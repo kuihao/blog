@@ -101,10 +101,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://kuihao.github.io/blog/blog/archive/">
+  <link rel="canonical" href="https://kuihao.github.io/blog/blog/2022/04/05/JetsonNano_Docker_and_JupyterLab/">
   <title>
     
-      Archives - Kuihao&#39;s Blog
+      JetsonNano Docker and JupyterLab - Kuihao&#39;s Blog
     
   </title>
 <meta name="generator" content="Hexo 6.1.0"></head>
@@ -252,29 +252,7 @@
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      正體中文
-    </span>
-    <select id="lang-select" data-canonical="archive/index.html">
-      
-      
-      <option value="zh-TW"  selected >
-        正體中文
-      </option>
-      
-      <option value="en" >
-        English
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -325,19 +303,19 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/blog/img/header_img/Taiwan_signed.jpg');
-      --intro-header-background-image-url-post: url('img/header_img/Hualien_carp_lake_shrink.JPG');
-      --intro-header-background-image-url-page: url('/blog/img/header_img/Hualien_carp_lake_shrink.JPG');
+      --intro-header-background-image-url-post: url('');
+      --intro-header-background-image-url-page: url('/blog/img/header_img/eng_magzine_shrink.JPG');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/Taiwan_signed.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/Hualien_carp_lake_shrink.JPG');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/Hualien_carp_lake_shrink.JPG');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/blog/img/header_img/eng_magzine_shrink.JPG');
     }
 
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/blog/img/header_img/Hualien_carp_lake_shrink.JPG'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url(''); */
       
     }
 
@@ -355,11 +333,42 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>Archives</h1>
-            <!--<hr class="small">-->
-            <span class="subheading" style="background-color:rgba(145,145,145,0.6)">雖不足綱範萬度，永垂不朽，且可釋滯目前，釐整時務。——《魏書·高祖記下》</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/blog/tags/#JetsonNano Docker JupyterLab" title="JetsonNano Docker JupyterLab">JetsonNano Docker JupyterLab</a>
+              
+            </div>
+            <h1>JetsonNano Docker and JupyterLab</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Kuihao on
+              2022-04-05
+            </span>
+
+
             
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">8</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">1.6k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -400,306 +409,519 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- page.ejs 就是主頁面顯示近期文章摘要的部分 -->
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+        <!-- Modify by Kuihao Chang -->
+        
+        <!-- The original markdown content -->
+        <h1>JetsonNano Docker and JupyterLab</h1>
+<h6 id="tags-docker-Jupyter-JetsonNano">tags: <code>docker</code> <code>Jupyter</code> <code>JetsonNano</code></h6>
+<p>‘’’<br>
+本教學參考/翻譯自 Nvidia 線上免費課程(英文教學):<br>
+<a target="_blank" rel="noopener" href="https://courses.nvidia.com/courses/course-v1:DLI+S-RX-02+V2/about">https://courses.nvidia.com/courses/course-v1:DLI+S-RX-02+V2/about</a><br>
+‘’’</p>
+<h2 id="名詞解釋">名詞解釋:</h2>
+<ul>
+<li>DLI: 全名為 Deep Learning Institute，給大專院校教職員提供免費下載的課程教材</li>
+<li>NGC: 全名為 NVIDIA GPU CLOUD，提供深度學習、機器學習和HPC的GPU最佳化應用軟體免費下載，有豐富的 docker image可下載</li>
+</ul>
+<h2 id="usb-ip-192-168-55-1">usb ip: 192.168.55.1</h2>
+<h2 id="Download-Docker-And-Start-JupyterLab">Download Docker And Start JupyterLab</h2>
+<h3 id="應用版">應用版:</h3>
+<ul>
+<li>Terminal ssh 連線</li>
+<li>撰寫command執行檔 docker_jupyter_run.sh:<br>
+(實際上仍是使用教程的dli-image，但不掛載鏡頭)<br>
+sudo docker run --runtime nvidia -it --rm --network host <br>
+–volume ~/nvdli-data:/nvdli-nano/data <br>
+<a target="_blank" rel="noopener" href="http://nvcr.io/nvidia/dli/dli-nano-ai:v2.0.1-r32.5.0">nvcr.io/nvidia/dli/dli-nano-ai:v2.0.1-r32.5.0</a></li>
+<li>重點:
+<ul>
+<li>啟動: ./docker_jupyter_run.sh</li>
+<li>IP and port: <ssh ip>:8888</li>
+<li>Jupyter 密碼: dlinano</li>
+<li>檔案儲存位置: ~/nvdli-data</li>
+</ul>
+</li>
+</ul>
+<h2 id="初學者教學版">初學者教學版:</h2>
+<ul>
+<li>
+<p>首先於遠端SSH連線進 Jetson nano</p>
+<ul>
+<li>win10 開啟 powershell<br>
+ssh <Jetson Nano user name>@<ip></li>
+</ul>
+</li>
+<li>
+<p>建立一個專案資料夾(用來保存docker-container更動的檔案): nvdli-data<br>
+mkdir -p ~/nvdli-data</p>
+</li>
+<li>
+<p>撰寫一個 docker_dli_run.sh 檔案<br>
+echo “sudo docker run --runtime nvidia -it --rm --network host <br>
+–volume ~/nvdli-data:/nvdli-nano/data <br>
+–device /dev/video0 <br>
+<a target="_blank" rel="noopener" href="http://nvcr.io/nvidia/dli/dli-nano-ai:v2.0.1-%E5%A1%AB%E5%85%A5L4T%E7%89%88%E6%9C%AC">nvcr.io/nvidia/dli/dli-nano-ai:v2.0.1-填入L4T版本</a>” &gt; docker_dli_run.sh</p>
+<ul>
+<li>L4T_version: r32.5.0</li>
+<li>L4T_version查詢方式
+<ul>
+<li>[!!!] 輸入: jetson_release 即可</li>
+<li>輸入指令查看JetsonNano的版本: cat /etc/nv_tegra_release<br>
+目前得到: # R32 (release), REVISION: 5.1, GCID: 27362550, BOARD: t210ref, EABI: aarch64, DATE: Wed May 19 18:07:59 UTC 2021<br>
+表示版本為: r32 5.1</li>
+<li>前往官網查看提供的 docker image 版本: <a target="_blank" rel="noopener" href="https://ngc.nvidia.com/catalog/containers/nvidia:dli:dli-nano-ai">https://ngc.nvidia.com/catalog/containers/nvidia:dli:dli-nano-ai</a>
+<ul>
+<li>對應最新版似乎只有 r32.5.0，只好硬裝看看 (一開始誤裝 r32.4.4 結果無法執行)</li>
+<li>結果: 幸好可以執行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>賦予 docker_dli_run.sh 執行權限<br>
+chmod +x docker_dli_run.sh</p>
+</li>
+<li>
+<p>以後要執行這個 docker 就輸入以下指令即可:<br>
+./docker_dli_run.sh</p>
+</li>
+<li>
+<p>Logging Into The JupyterLab Server</p>
+<ol>
+<li>Open the following link address:<br>
+於遠端機器瀏覽器輸入: <ssh ip>:8888<br>
+若是使用 usb 連接筆電，則固定IP為: 192.168.55.1:8888
+<ul>
+<li>The JupyterLab server running on the Jetson Nano will open up with a login prompt the first time.</li>
+</ul>
+</li>
+<li>Enter the password: dlinano</li>
+<li>You will see this screen. Congratulations!</li>
+</ol>
+</li>
+</ul>
+<hr>
+<p>old-one: ssh 連線時千萬不可以 reboot，會導致 ssh public key 對不上等可怕問題, vnc關閉(這似乎會堵塞所有連線)<br>
+old user: kuihao<br>
+password: same as laptop (force change passwd: sudo passwd <username>)<br>
+docker中有實驗記錄<br>
+安裝 jupyter, password = same as laptop</p>
+<hr>
+<p>new-one: kuihao<br>
+password: same as laptop<br>
+剛設定完，並已安裝基本必要套件、設定cuda、swap(應該是設定失敗，要照官方重新設定)</p>
+<ul>
+<li>調整功耗模式
+<ul>
+<li>鎖住功率使其不過載<br>
+sudo jetson_clocks</li>
+<li>顯示當前模式<br>
+sudo nvpmodel -q</li>
+<li>check the current performance mode, issue:<br>
+$ sudo nvpmodel -q --verbose</li>
+<li>預設為高效能模式MAX N模式(10W) (這個功率需要接DC 5V 4A，不然會突然關機)<br>
+sudo nvpmodel -m 0</li>
+<li>切換換到 5W 模式(Micro-USB供電)<br>
+sudo nvpmodel -m 1</li>
+</ul>
+</li>
+<li>調整swap空間
+<ul>
+<li>檢查一些目前系統是否有設定 Swap 空間, 可以用 “swapon -s” 指令</li>
+<li>check your memory and swap values with this command:<br>
+free -m</li>
+<li>If you don’t have the right amount of swap, or want to change the value, use the following procedure to do so (from a terminal):
+<ul>
+<li>
+<p>根據某網友實測，設定8G才比較不會當機</p>
+</li>
+<li>
+<p>Disable ZRAM:<br>
+sudo systemctl disable nvzramconfig</p>
+</li>
+<li>
+<p>Create 8GB swap file<br>
+sudo fallocate -l 8G /mnt/8GB.swap<br>
+sudo chmod 600 /mnt/8GB.swap<br>
+sudo mkswap /mnt/8GB.swap</p>
+</li>
+<li>
+<p>Append the following line to /etc/fstab<br>
+[可能失敗]:  sudo echo “/mnt/8GB.swap swap swap defaults 0 0” &gt;&gt; /etc/fstab<br>
+[若失敗則改成開檔改寫]:</p>
+<ol>
+<li>sudo nano /etc/fstab</li>
+<li>新增或修改原本的 swap 設定，填入 /mnt/8GB.swap swap swap defaults 0 0</li>
+<li>ctrl+s 儲存</li>
+<li>ctrl+x 退出</li>
+</ol>
+</li>
+<li>
+<p>REBOOT! (重新啟動才會套用新設定)</p>
+</li>
+<li>
+<p>檢視更改是否成功:<br>
+free -m<br>
+應會看到多了一行: Swap: total 8191</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1>docker image:</h1>
+<pre><code>* image: L4T 測試 docker on jetson(?)
+    * https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base
+    #xhost +
+    #sudo docker run -it --rm --net=host --runtime nvidia  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.4.3
+    #apt-get update &amp;&amp; apt-get install -y --no-install-recommends make g++
+    root@nano:/# cp -r /usr/local/cuda/samples /tmp
+    root@nano:/# cd /tmp/samples/5_Simulations/nbody
+    root@nano:/# make
+    root@nano:/# ./nbody
+* Tensorflow (失敗: ARM 硬體版本不合):
+    * https://ngc.nvidia.com/catalog/containers/nvidia:tensorflow
+        docker pull nvcr.io/nvidia/tensorflow:21.06-tf1-py3
+    * Run the container image.
+        sudo docker run --gpus all -it --rm -v /home/kuihao/K/DockerData/TensorflowImage:/K/DockerData nvcr.io/nvidia/tensorflow:21.06-tf1-py3
+        
+        - `-it` means run in interactive mode (以使用者身分進入 bash/container)
+        - `--rm` will delete the container when finished
+        - `-v` is the mounting directory
+        - `local_dir` is the directory or file from your host system (absolute path) that you want to access from inside your container.  For example, the `local_dir` in the following path is `/home/jsmith/data/mnist`.  
 
-      <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
+        <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-v <span class="regexp">/home/</span>jsmith<span class="regexp">/data/m</span>nist:<span class="regexp">/data/m</span>nist</span><br></pre></td></tr></table></figure>
+        
+        If you are inside the container, for example, `ls /data/mnist`, you will see the same files as if you issued the `ls /home/jsmith/data/mnist` command from outside the container.
+        
+        - `container_dir` is the target directory when you are inside your container.  For example, `/data/mnist` is the target directory in the example:
+        
+        <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-v <span class="regexp">/home/</span>jsmith<span class="regexp">/data/m</span>nist:<span class="regexp">/data/m</span>nist</span><br></pre></td></tr></table></figure>
+        
+        - `xx.xx` is the container version. For example, `20.01`.
+        - `tfx` is the version of TensorFlow. For example, `tf1` or `tf2`.
+    * TensorFlow is run by importing it as a Python module:
+        $ python
+        &gt;&gt;&gt; import tensorflow as tf
+        &gt;&gt;&gt; print(tf.__version__)
+* L4T 版本的 Tensorflow:
+    * https://ngc.nvidia.com/catalog/containers/nvidia:l4t-tensorflow
+        docker pull nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf2.3-py3
+    * Running the Container:
+        (X) sudo docker run -it --rm --runtime nvidia --network host nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf1.15-py3
+    * Running the Container &amp;&amp; Mounting Directories from the Host Device:
+        * Tensorflow 1.15:
+            sudo docker run -it --rm --runtime nvidia --network host -v /home/kuihao/K/DockerData/TF1Image:/K/DockerData nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf1.15-py3
+        * Tensorflow 2.3:
+            sudo docker run -it --rm --runtime nvidia --network host -v /home/kuihao/K/DockerData/TF2Image:/K/DockerData nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf2.3-py3
+* docker container 指令:
+    * https://ithelp.ithome.com.tw/articles/10191634
+    * --restart=always：如果 container 遇到例外的情況被 stop 掉，例如是重新開機，docker 會試著重新啟動此 container
+    * --name=&lt;name&gt;：設定 container 的 name 為 &lt;name&gt;
+    * [日常執行重複使用container]  
+        * 建立:
+        sudo docker run -it --runtime nvidia --restart=always --network host -v /home/kuihao/K/DockerData/TF2Image:/K/DockerData --name contain_TF2 nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf2.3-py3
+        * 日後進入:
+        sudo docker exec -it contain_TF2 bash
+        * 刪除 container:
+        sudo docker rm &lt;container ID or name&gt;
+    * 更多 docker 指令:
+        * https://docs.docker.com/cloud/aci-integration/
+        * https://ithelp.ithome.com.tw/articles/10191727
+</code></pre>
+<ul>
+<li>
+<p>取得 abslute path<br>
+readlink -f file.txt</p>
+</li>
+<li>
+<p>風扇控制 (可撰寫開機自動啟動):</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.cavedu.com/2019/10/04/nvidia-jetson-nano-fan/">https://blog.cavedu.com/2019/10/04/nvidia-jetson-nano-fan/</a></li>
+<li>自訂風速 0~255，設為 0 就關閉風扇:<br>
+sudo sh -c ‘echo 100 &gt; /sys/devices/pwm-fan/target_pwm’</li>
+<li>更佳的選擇 (已安裝) <a target="_blank" rel="noopener" href="https://github.com/Pyrestone/jetson-fan-ctl">https://github.com/Pyrestone/jetson-fan-ctl</a></li>
+</ul>
+</li>
+<li>
+<p>監測 jetson nano 溫度:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.programmersought.com/article/25313505100/">https://www.programmersought.com/article/25313505100/</a><br>
+sudo jtop</li>
+</ul>
+</li>
+</ul>
 
-      
-
-      <!-- 归档列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2022">
-          <span class="tag-text">2022</span>
-        </span>
-        <ul>
+        
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
           
-          <li>
-            04-05
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/05/Oh_My_Posh_powershell_顯示亂碼/" style="color: #0085a1">
-              <span>
-                Oh My Posh powershell 顯示亂碼
-                
-                -- zh-TW
-                
-              </span>
-            </a>
+          <li class="previous">
+            <a href="/blog/2022/04/05/Oh_My_Posh_powershell_顯示亂碼/" data-toggle="tooltip" data-placement="top"
+              title="Oh My Posh powershell 顯示亂碼">&larr; Previous Post</a>
           </li>
           
-          <li>
-            04-05
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/05/JetsonNano_Docker_and_JupyterLab/" style="color: #0085a1">
-              <span>
-                JetsonNano Docker and JupyterLab
-                
-                -- zh-TW
-                
-              </span>
-            </a>
-          </li>
           
-          <li>
-            04-05
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/05/2022q1_Homework1_lab0/" style="color: #0085a1">
-              <span>
-                2022q1 Homework1 (lab0)
-                
-                -- zh-TW
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-05
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/05/C_operator/" style="color: #0085a1">
-              <span>
-                邏輯運算子的妙用
-                
-                -- zh-TW
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-05
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/05/oh_my_posh_changeTheme/" style="color: #0085a1">
-              <span>
-                Powershell oh my posh 自訂主題
-                
-                -- zh-TW
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-05
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/05/Sigmoid-derive-Softmax/" style="color: #0085a1">
-              <span>
-                Sigmoid 推導至 Softmax
-                
-                -- zh-TW
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-04
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/04/First-Artical/" style="color: #0085a1">
-              <span>
-                Is Hexo awesome? Static website construction and maintenance
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-03
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/03/First-Artical/" style="color: #0085a1">
-              <span>
-                Hexo 很棒嗎? 靜態網站建置與維護
-                
-                -- zh-TW
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-03
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/blog/2022/04/03/hello-world/" style="color: #0085a1">
-              <span>
-                Hello World
-                
-                -- zh-TW
-                
-              </span>
-            </a>
+          <li class="next">
+            <a href="/blog/2022/04/05/2022q1_Homework1_lab0/" data-toggle="tooltip" data-placement="top"
+              title="2022q1 Homework1 (lab0)">Next Post &rarr;</a>
           </li>
           
         </ul>
-      </div>
-      
-    </div>
-  </div>
-</div>
 
+        
 
-      <!-- 如果开启评论功能 -->
-      
-      <hr>
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
 
-      
-
-      
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/blog/about/">關於我</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/blog/img/avatar/photo.png" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Expertise in information technology and tourism. Student from Taiwan. =w=</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/Kuihao">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
-        <!-- Featured Tags -->
-
-<section>
-  <h5><a href="/blog/tags/">特色標籤</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/blog/tags/#hello-world" title="hello-world" rel="2">hello-world</a>
-    
-    
-    
-    <a href="/blog/tags/#linux linux2022" title="linux linux2022" rel="1">linux linux2022</a>
-    
-    
-    
-    <a href="/blog/tags/#C C++" title="C C++" rel="1">C C++</a>
-    
-    
-    
-    <a href="/blog/tags/#JetsonNano Docker JupyterLab" title="JetsonNano Docker JupyterLab" rel="1">JetsonNano Docker JupyterLab</a>
-    
-    
-    
-    <a href="/blog/tags/#Oh My Posh powershell 顯示亂碼" title="Oh My Posh powershell 顯示亂碼" rel="1">Oh My Posh powershell 顯示亂碼</a>
-    
-    
-    
-    <a href="/blog/tags/#sigmoid softmax" title="sigmoid softmax" rel="1">sigmoid softmax</a>
-    
-    
-    
-    <a href="/blog/tags/#Oh-My-Posh Powershell" title="Oh-My-Posh Powershell" rel="1">Oh-My-Posh Powershell</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/blog/">最新貼文</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../2022/04/05/Oh_My_Posh_powershell_%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/">
-      <li>Oh My Posh powershell 顯示亂碼</li>
-    </a>
-    
-    <a href="../2022/04/05/JetsonNano_Docker_and_JupyterLab/">
-      <li>JetsonNano Docker and JupyterLab</li>
-    </a>
-    
-    <a href="../2022/04/05/2022q1_Homework1_lab0/">
-      <li>2022q1 Homework1 (lab0)</li>
-    </a>
-    
-    <a href="../2022/04/05/C_operator/">
-      <li>邏輯運算子的妙用</li>
-    </a>
-    
-    <a href="../2022/04/05/oh_my_posh_changeTheme/">
-      <li>Powershell oh my posh 自訂主題</li>
-    </a>
-    
+<div class="social-share" data-initialized="true" data-disabled="tencent, douban, qzone, linkedin, google, diandian, qq" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <!-- facebook 超連結有問題 待修
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-facebook">
+        <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    -->
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=JetsonNano Docker and JupyterLab&body=Hi,I found this website and thought you might like it https://kuihao.github.io/blog/blog/2022/04/05/JetsonNano_Docker_and_JupyterLab/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
 
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 
+        <!-- Sharing End -->
+        
         <hr>
-    
-</div>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/blog/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Tue Apr 05 2022 23:33:00 GMT+0000', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
 
 
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
     
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目錄</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">JetsonNano Docker and JupyterLab</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#tags-docker-Jupyter-JetsonNano"><span class="toc-nav-number">1.0.0.0.0.1.</span> <span class="toc-nav-text">tags: docker Jupyter JetsonNano</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%90%8D%E8%A9%9E%E8%A7%A3%E9%87%8B"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">名詞解釋:</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#usb-ip-192-168-55-1"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">usb ip: 192.168.55.1</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Download-Docker-And-Start-JupyterLab"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">Download Docker And Start JupyterLab</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%87%89%E7%94%A8%E7%89%88"><span class="toc-nav-number">1.3.1.</span> <span class="toc-nav-text">應用版:</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%88%9D%E5%AD%B8%E8%80%85%E6%95%99%E5%AD%B8%E7%89%88"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">初學者教學版:</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">docker image:</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/blog/tags/">特色標籤</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/blog/tags/#JetsonNano Docker JupyterLab" title="JetsonNano Docker JupyterLab">JetsonNano Docker JupyterLab</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        <!-- Kuihao: 關閉 post page 的 friend 功能
+        
+        <hr>
+        <h5>摯友</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+        -->
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+<!-- Modify by Kuihao -->
+<!--
+<script>
+  /* Kuihao feature: 可以取得指定 iframe 網頁的實際高度 (由捲動條高度得知) */
+  /* 可惜因為同源政策，只對 same domain 的 iframe 有效 */
+  function real_dynamic_iframe_height() {
+    // Find the height of the internal page (iframe)
+    var the_height = document.getElementById('TargetFrame').contentWindow.document.body.scrollHeight;
+    // Change the height of iframe element
+    document.getElementById("TargetFrame").height = the_height;
+    document.getElementById("AnswerBox").innerHTML= the_height;
+  };
+</script>
+-->
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 		<!-- Footer (contains ThemeColor、viewer) -->
 		<!-- Footer -->
