@@ -101,7 +101,7 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://kuihao.github.io/blog/blog/en/">
+  <link rel="canonical" href="https://kuihao.github.io/blog/blog/2022/04/05/Sigmoid-derive-Softmax/">
   <title>
     
       Kuihao&#39;s Blog
@@ -191,7 +191,7 @@
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/blog/">HOME</a>
+            <a href="/blog/">首頁</a>
           </li>
 
           
@@ -201,7 +201,7 @@
           <li>
             <a href="/blog/about/">
               
-              ABOUT
+              關於
               
               
             </a>
@@ -212,7 +212,7 @@
           <li>
             <a href="/blog/archive/">
               
-              ARCHIVES
+              文庫
               
               
             </a>
@@ -223,7 +223,7 @@
           <li>
             <a href="/blog/categories/">
               
-              CATEGORIES
+              類別
               
               
             </a>
@@ -234,7 +234,7 @@
           <li>
             <a href="/blog/tags/">
               
-              TAGS
+              標籤
               
               
             </a>
@@ -245,36 +245,14 @@
           
           <li>
             <a class="popup-trigger">
-              <span class="search-icon"></span>SEARCH</a>
+              <span class="search-icon"></span>搜尋</a>
           </li>
           
 
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      English
-    </span>
-    <select id="lang-select" data-canonical="en/index.html">
-      
-      
-      <option value="zh-TW" >
-        正體中文
-      </option>
-      
-      <option value="en"  selected >
-        English
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -336,9 +314,9 @@
     }
 
     header.intro-header {
-       /*config*/
-        background-image: var(--intro-header-background-image-url-home);
-        /* background-image: url('/blog/img/header_img/Taiwan_signed.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url(''); */
       
     }
 
@@ -356,15 +334,40 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>Kuihao&#39;s Blog</h1>
-            <!--<hr class="small">-->
-            <span class="subheading" style="background-color:rgba(145,145,145,0.6)">This blog only update my essence collection.</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+            </div>
+            <h1></h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Kuihao on
+              2022-04-05
+            </span>
+
+
             
-              <a class="subheading" href="https://hackmd.io/@Kuihao" target="_blank" style="color:#b0fcff;">
-                To see all, go to my HackMD
-              </a>
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">6</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">1.5k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
             
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -405,187 +408,450 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h1>Sigmoid 推導至 Softmax</h1>
+<p>:::info<br>
+Latex 數學式: <a target="_blank" rel="noopener" href="https://hackmd.io/@sysprog/B1RwlM85Z">https://hackmd.io/@sysprog/B1RwlM85Z</a><br>
+Hackmd 各種嵌入語法: <a target="_blank" rel="noopener" href="https://hackmd.io/s/features-tw">https://hackmd.io/s/features-tw</a><br>
+:::</p>
+<ul>
+<li><strong>假設</strong>
+<ul>
+<li>令 Classes 數量: C</li>
+</ul>
+</li>
+<li><strong>Softmax</strong>:
+<ul>
+<li>說明: <strong>將C個實數轉換成 Multi-classes 的機率分佈，可由Sigmoid推廣而成</strong></li>
+<li>功能1: 輸入 C 個數值，輸出分數總和為 1 (即機率)</li>
+<li>功能2: exp() 可以使數值差距加大</li>
+<li><strong>數學式:</strong> 機率 = Softmax( C 個數值 )
+<ul>
+<li>$\sigma(x)<em>j = \dfrac{e^{x_j}}{\sum</em>{i=1}^{C}e^{x_i}}\where \ j = 1,…,C.$</li>
+</ul>
+</li>
+<li><strong>條件機率意義:</strong> 樣本向量 x 屬於第 j 個分類的機率
+<ul>
+<li>$P(y=j|x) = \dfrac{e^{x_j}}{\sum_{i=1}^{C}e^{x_i}}\where \ j = 1,…,C.$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Sigmoid</strong>:
+<ul>
+<li>本身功能1: 將實數轉換成 [0,1] 之間的實數</li>
+<li>本身功能2: exp(x) 可以使數值差距加大，並使x趨近零的時候，Sigmoid(x)的斜率增大</li>
+<li>本身功能3: 本身是連續型函數，可以微分</li>
+<li>說明: <strong>將2個實數轉換成 Binary-classes 的機率分佈</strong></li>
+<li></li>
+<li>功能1: 輸入 2 個數值，輸出分數總和為 1 (即機率)</li>
+<li>功能2: exp() 可以使數值差距加大
+<ul>
+<li><strong>數學式:</strong> 機率 = Sigmoid( x )
+<ul>
+<li>$\sigma(x) = \dfrac{1}{1+e^{-x}}$</li>
+</ul>
+</li>
+<li>理論上 Binary classes 轉換應為:
+<ul>
+<li>$\sigma(x)_j = P(y=j|x=a) = \dfrac{1}{1+e^{-(a-b)}} \ where \ j = {a,b}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Sigmoid推導</strong>
+<ul>
+<li>核心想法1: 設計一個類似階層函數的連續型邏輯函數，(類似電波學的脈衝信號)，推測性質有:
+<ol>
+<li>將線性函數轉變成非線性</li>
+<li>疊加多個脈衝信號，(傅立葉的概念)，理論上可以產生各種函數變化</li>
+<li>限制數值在 [0,1]，並明確描述信號的有與無</li>
+</ol>
+</li>
+<li>核心想法2: 輸出 [0,1] 之間，可以視為一種機率分布</li>
+<li>核心想法3: 可以計算兩個輸入數值之間的比率 (Ratio)，並 Ratio 總和為 1，象徵其機率關係</li>
+<li><strong>推導自: 兩輸入數值 a,b 之比率關係 (a 在 a,b 兩者總和之中所佔有的量)，$a:b =&gt; R = \dfrac{a}{a+b}$</strong></li>
+<li><strong>Claim: $\sigma(x) = \dfrac{1}{1+e^{-x}}$</strong></li>
+<li><strong>將原式的變數先取標準指數 exp(.)，則兩變數仍存在一個比率關係，只是 $e^a$, $e^b$ 兩者的比例較 a:b 更加懸殊。</strong> PS. exp(.) 是微分等於自己 $[e^x]'=e^x$，負數趨近0且斜率逐漸平緩、正數趨近無窮且斜率逐漸陡峭。
+<ul>
+<li>得 $\dfrac{e^a}{e^a+e^b}$</li>
+</ul>
+</li>
+<li>分數的性質是上下可同時提出一個公因數使之化簡，<strong>將此推廣，我們可以上下同除 $e^b$</strong> (對此Ratio用 $e^b$做標準化__Normalize with $e^b$)
+<ul>
+<li>得 $\dfrac{\dfrac{e^a}{e^b}}{\dfrac{e^a+e^b}{e^b}} = \dfrac{\dfrac{e^a}{e^b}}{\dfrac{e^a}{e^b}+\dfrac{e^b}{e^b}} = \dfrac{e^{a-b}}{e^{a-b}+e^0} = \dfrac{e^{a-b}}{e^{a-b}+1}$</li>
+</ul>
+</li>
+<li><strong>令 x = a-b</strong>
+<ul>
+<li>得 $\sigma(x)=\dfrac{e^{x}}{e^{x}+1}$</li>
+<li>==這就是 sigmoid 的第一種型態==</li>
+</ul>
+</li>
+<li>但這作為函數不好看，可以再簡化，用上一步的方法，<strong>Ratio再用 $e^x$ 做標準化 (Normalize with $e^x$)</strong>
+<ul>
+<li>得 $\sigma(x)=\dfrac{1}{1+e^{-x}}$</li>
+<li>==這就是最常見的 sigmoid 的第二種型態==</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Sigmoid 的意義</strong>
+<ul>
+<li>解釋 Sigmoid 的意義要從第一型態來說明，先將 $e^x$ 視為一個正實數 N，則<strong>函數意義就是「給出 N 與 1 之間的比率」</strong></li>
+<li>則應用到深度學習就會有些奇怪，Sigmoid 是 Binary Classifier (Logistic Regression) 的輸出，既然是二元分類，則兩相比較的變數應該是 $e^a$ 與 $e^b$，若要使用 $\sigma(x)=\dfrac{e^{x}}{e^{x}+1}$，則應輸入 x = a-b，先進行標準化轉換，如此一來 $\sigma(x)$ 的輸出才會是二元機率分布。</li>
+<li>但實際上，也許不必特地做這件事情，由於神經網路其實就是線性轉換，我們可以期待神經網路透過梯度下降可以學會將權重值包含做正規化這件事情，畢竟只要讓輸入值減去一個 bias，這應該並非難事，<em><s>或是可以嘗試直接設 bias 就是 -b (?)</s></em>。</li>
+</ul>
+</li>
+<li><strong>推廣至 Softmax</strong>
+<ul>
+<li>由 Sigmoid 推導過程可知，binary condition probility 應寫成:
+<ul>
+<li>$P(y|x) = \sigma(x) = \dfrac{e^{x}}{e^a+e^b} \<br>
+where \<br>
+x = {a,b}, <br>
+y=<br>
+\begin{cases}<br>
+1, \quad belong \ to \ class \ 1 \<br>
+0, \quad belong \ to \ class \ 2<br>
+\end{cases}$</li>
+<li>$\dfrac{e^{x}}{e^a+e^b}$ 可以改寫成 $\dfrac{e^{x_j}}{\sum_{i=1}^{2}e^{x_i}} \<br>
+where \ x_j = {a,b}, \ x_1 = a, \ x_2 = b$</li>
+<li>當分類不止兩類，而是 C 類，便得到 Softmax 函數：
+<ul>
+<li>$\sigma(x)<em>j = \dfrac{e^{x_j}}{\sum</em>{i=1}^{C}e^{x_i}}\where \ j = 1,…,C.$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="補充">補充</h2>
+<ul>
+<li>
+<p>==<strong>Softmax with predicted-label smoothing</strong> (控制Softmax標籤平滑化程度)==</p>
+<ul>
+<li>公式:
+<ul>
+<li>$\sigma(x)<em>j = \dfrac{e^{(x_j/\tau)}}{\sum</em>{i=1}^{C}e^{(x_i/\tau)}}\where \ j = 1,…,C.$ $\tau$ is called a temperature parameter (溫度參數) and $\infty \gt \tau \gt 0$</li>
+</ul>
+</li>
+<li>當 $\tau$ 越大，則所有類別的輸入值燈會變得越趨近 0，反應在標準指數的輸出就會越趨近 1，最後所有類別的 Softmax 輸出都會接近<a target="_blank" rel="noopener" href="https://pedia.cloud.edu.tw/Entry/Detail/?title=%E7%AD%89%E5%88%86">等分</a>。</li>
+<li>在 Reinforcement learning 稱為 Action probabilities function</li>
+<li>在 Knowledge distillation 為產生 Soft-label 的方法 (<s>可解釋為蒸餾?</s>)</li>
+</ul>
+</li>
+<li>
+<p><strong>Logit Function</strong> (<a target="_blank" rel="noopener" href="https://terms.naer.edu.tw/search/?q=Logit&amp;field=ti&amp;op=AND&amp;group=&amp;num=10">羅吉特函數</a>)</p>
+<ul>
+<li>
+<p>==<strong><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Logit">Logit Function</a> 並不是指 Logistic Regression!!!</strong>==</p>
+</li>
+<li>
+<p><strong>Logit Function 就是 Sigmoid Function 的反函數 (Inverse)</strong></p>
+</li>
+<li>
+<p>公式:</p>
+<ul>
+<li>$\begin{split}<br>
+logit§ &amp;= \sigma^{-1}§ \<br>
+&amp;= \ln(\dfrac{p}{1-p}) \<br>
+&amp;= \ln§ - \ln(1-p) \<br>
+&amp;= -ln(\frac{1}{p}-p) \<br>
+&amp;for \ p \in [0,1]<br>
+\end{split}$</li>
+</ul>
+</li>
+<li>
+<p>這個名稱常常出現在 Tensorflow 的 Loss Function中，例如:</p>
+<ul>
+<li>from_logits</li>
+</ul>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tf.keras.losses.CategoricalCrossentropy(</span><br><span class="line">    from_logits=<span class="literal">False</span>, label_smoothing=<span class="number">0.0</span>, axis=-<span class="number">1</span>,</span><br><span class="line">    reduction=losses_utils.ReductionV2.AUTO,</span><br><span class="line">    name=<span class="string">&#x27;categorical_crossentropy&#x27;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>logits</li>
+</ul>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tf.nn.sigmoid_cross_entropy_with_logits(</span><br><span class="line">    labels=<span class="literal">None</span>, logits=<span class="literal">None</span>, name=<span class="literal">None</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://www.tensorflow.org/api_docs/python/tf/nn/softmax_cross_entropy_with_logits">官方解釋:</a></p>
+<ul>
+<li>Per-label activations, typically a linear output. These activation energies are interpreted as <strong>unnormalized log probabilities</strong>.</li>
+</ul>
+</li>
+<li>
+<p>其實 Tensorflow 的意思就是將尚未套用 Sigmoid 系列 Activation 的 Tensor，都稱其為 Logits tensor。例如:</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">out = tf.keras.layers.Dense(n_units)  <span class="comment"># &lt;-- linear activation function</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>當 CategoricalCrossentropy 設定 from_logits=True，函式會幫你把輸入 Tensor 補通過一個 Softmax Function，使 Tensor 轉成機率。當然預設為 False，表示預期你輸入的 Tensor 已經是 probability distribution。(<a target="_blank" rel="noopener" href="https://datascience.stackexchange.com/questions/73093/what-does-from-logits-true-do-in-sparsecategoricalcrossentropy-loss-function">相關連結</a>)</p>
+</li>
+<li>
+<p>由下圖可知 logit 就是 sigmoid 反函數，即未套用 sigmoid 的輸入值。</p>
+<ul>
+<li>
+<iframe src="https://www.geogebra.org/calculator/mzyjrsjs?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>CrossEntropy<br>
+<img src="https://i.imgur.com/TJMABwq.png" alt=""></p>
+</li>
+</ul>
+<h6 id="tags-sigmoid-softmax-logits-temperature-soft-label-softmax推導-CrossEntropy-entropy">tags: <code>sigmoid</code> <code>softmax</code> <code>logits</code> <code>temperature</code> <code>soft-label</code> <code>softmax推導</code> <code>CrossEntropy</code> <code>entropy</code></h6>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/blog/2022/04/04/First-Artical/" data-toggle="tooltip" data-placement="top" title="Is Hexo awesome? Static website construction and maintenance">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
     
-
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-
-      <!-- Main Content -->
-
-
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <div class="top">
-    <div class="iconfont icon-hot animated infinite tada"></div>
-  </div>
-  
-  <!-- top end -->
-  
-
-  <a href="/blog/2022/04/04/First-Artical/">
-    <h2 class="post-title">
-      Is Hexo awesome? Static website construction and maintenance
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      Static website Hexo
-
-Hexo is a static website framework that helps authors quickly build professional-looking blogs
-Hexo’s articles are written in markdown syntax
-Reference: Try to learn Hexo
-
-Envi......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Kuihao on
-    2022-04-04
+      本主題原形為 v-vincen 所設計的 Live My Life，若您也喜歡此主題，可以於 Github 找到出處。
+    
   </p>
-  <div class="tags">
-    
-    <a href="/blog/tags/#hello-world" title="hello-world">hello-world</a>
-    
-  </div>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent, douban, qzone, linkedin, google, diandian, qq" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <!-- facebook 超連結有問題 待修
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-facebook">
+        <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    -->
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=&body=Hi,I found this website and thought you might like it https://kuihao.github.io/blog/blog/2022/04/05/Sigmoid-derive-Softmax/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/blog/js/comment/gitalk.js"></script>
   
 
-</div>
-<hr>
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Tue Apr 05 2022 02:22:54 GMT+0000', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
 
 
-  <!-- Pager -->
-  <ul class="pager">
-    
-    
-  </ul>
+<!-- 2. gitment comment -->
 
 
-      <!-- 如果开启评论功能 -->
-      
-    </div>
+<!-- 3. disqus comment -->
 
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/blog/about/">ABOUT ME</a></h5>
-  <div class="short-about">
 
-    
-    <img id="avatar_pic" src="/blog/img/avatar/photo.png" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Expertise in information technology and tourism. Student from Taiwan. =w=</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/Kuihao">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-    </ul>
-  </div>
-</section>
-
+        <!-- comments end -->
         <hr>
-    
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
         <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/blog/tags/">特色標籤</a>
+          </h5>
+          <div class="tags">
+            
+          </div>
+        </section>
+        
 
-<section>
-  <h5><a href="/blog/tags/">FEATURED TAGS</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/blog/tags/#hello-world" title="hello-world" rel="2">hello-world</a>
-    
-    
-  </div>
-</section>
-
-
+        <!-- Friends Blog -->
+        
         <hr>
-    
-        <!-- RECENT POSTS -->
+        <h5>摯友</h5>
+        <ul class="list-inline">
 
-<h5><a href="/blog/">RECENT POSTS</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../2022/04/05/Sigmoid-derive-Softmax/">
-      <li>(no title)</li>
-    </a>
-    
-    <a href="../2022/04/04/First-Artical/">
-      <li>Is Hexo awesome? Static website construction and maintenance</li>
-    </a>
-    
-    <a href="../2022/04/03/First-Artical/">
-      <li>Hexo 很棒嗎? 靜態網站建置與維護</li>
-    </a>
-    
-    <a href="../2022/04/03/hello-world/">
-      <li>Hello World</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-
-    
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
@@ -750,7 +1016,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
             <span class="search-icon">
               <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
             </span>
-            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+            <input autocomplete="off" placeholder="搜尋..." type="text" id="local-search-input">
           </div>
         </div>
         <div id="local-search-result"></div>
