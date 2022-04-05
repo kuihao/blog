@@ -1,6 +1,7 @@
 ---
 layout: layout
 ---
+<!-- page.ejs 就是主頁面顯示近期文章摘要的部分 -->
 <!-- Main Content -->
 <div class="container">
   <div class="row">
@@ -23,7 +24,8 @@ layout: layout
         <div class="tags">
           <% site.tags.map(function(tag){  %>
           <% if(tag.length > config['featured-condition-size']) { %>
-          <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>" rel="<%= tag.length %>"><%= tag.name %></a>
+          <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"
+            rel="<%= tag.length %>"><%= tag.name %></a>
           <% } %>
           <% }) %>
         </div>
@@ -75,7 +77,7 @@ layout: layout
         var disqus_identifier = "<%= page.permalink %>";
         var disqus_url = "<%= page.permalink %>";
 
-        (function() {
+        (function () {
           var dsq = document.createElement('script');
           dsq.type = 'text/javascript';
           dsq.async = true;

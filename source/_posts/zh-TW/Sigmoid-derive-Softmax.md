@@ -5,6 +5,9 @@ tags: sigmoid softmax
 catalog: true # Table of Contents (TOC) 快捷鉚釘
 sticky: 999
 ExternalLink: https://hackmd.io/@Kuihao/Softmax_Derive
+showScroll: no
+iframeHight: 5500px
+# header-img: ""
 ---
 # Sigmoid 推導至 Softmax
 
