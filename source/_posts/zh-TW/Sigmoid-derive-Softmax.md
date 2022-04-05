@@ -1,10 +1,11 @@
+---
+title: Sigmoid 推導至 Softmax
+date: 2022-04-05 12:52:00
+tags: sigmoid softmax
+catalog: true # Table of Contents (TOC) 快捷鉚釘
+sticky: 999
+---
 # Sigmoid 推導至 Softmax
-
-:::info
-Latex 數學式: https://hackmd.io/@sysprog/B1RwlM85Z
-Hackmd 各種嵌入語法: https://hackmd.io/s/features-tw
-:::
-
 
 * **假設**
     * 令 Classes 數量: C
