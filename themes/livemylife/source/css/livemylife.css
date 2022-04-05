@@ -7,7 +7,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.7;
@@ -260,7 +265,8 @@ li.archive-list-item:hover a {
   color: black !important;
 }
 
-.markdown-body .highlight pre, .markdown-body pre {
+.markdown-body .highlight pre,
+.markdown-body pre {
   padding: 16px !important;
 }
 
@@ -336,9 +342,11 @@ li.archive-list-item:hover a {
   transform: translateY(200%);
 }
 
-.gitter-open-chat-button:focus, .gitter-open-chat-button:hover {
+.gitter-open-chat-button:focus,
+.gitter-open-chat-button:hover {
   text-decoration: none;
 }
+
 /* language CSS */
 #lang-select {
   opacity: 0;
@@ -397,4 +405,31 @@ li.archive-list-item:hover a {
 /* 滚动条边角样式 */
 ::-webkit-scrollbar-corner {
   background: white;
+}
+
+/* Kuihao feature */
+.post-iframe {
+  height: 1024px;
+  max-height: 100%;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 1024px;
+  max-height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* 4x3 縱橫比 */
+.iframe-container-4x3 {
+  padding-top: 75%;
 }

@@ -9,19 +9,29 @@ layout: layout
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
+        <!-- Modify by Kuihao Chang -->
+        <% if (page.ExternalLink){ %>
+        <!-- The external markdown iframe page -->
+        <div class="iframe-container">
+          <iframe class="post-iframe" frameborder="0" scrolling="yes" src=<%= (page.ExternalLink) %>></iframe>
+        </div>
+        <% }else{ %>
+        <!-- The original markdown content -->
         <%- page.content %>
-
+        <% } %>
         <hr>
         <!-- Pager -->
         <ul class="pager">
           <% if (page.prev){ %>
           <li class="previous">
-            <a href="<%- config.root %><%- page.prev.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.prev.title %>">&larr; Previous Post</a>
+            <a href="<%- config.root %><%- page.prev.path %>" data-toggle="tooltip" data-placement="top"
+              title="<%- page.prev.title %>">&larr; Previous Post</a>
           </li>
           <% } %>
           <% if (page.next){ %>
           <li class="next">
-            <a href="<%- config.root %><%- page.next.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.next.title %>">Next Post &rarr;</a>
+            <a href="<%- config.root %><%- page.next.path %>" data-toggle="tooltip" data-placement="top"
+              title="<%- page.next.title %>">Next Post &rarr;</a>
           </li>
           <% } %>
         </ul>

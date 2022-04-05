@@ -2,6 +2,9 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+# Kuihao features:
+# 2022/4/5: _post 若有設定 `ExternalLink`，則該文章會直接嵌入所填入網址的內容 (code 於 post.ejs 中撰寫)
+
 # Site
 title: Kuihao's Blog # 部落格名稱
 subtitle: 'This blog only update my essence collection.' # 部落格小標題
@@ -297,7 +300,7 @@ scroll: true
 
 # Tip
 tip:
-  enable: true
+  enable: false
   # copyright: If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
 
 
