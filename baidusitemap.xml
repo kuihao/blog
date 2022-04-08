@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kuihao.github.io/blog/blog/2022/04/05/Oh_My_Posh_powershell_%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/</loc>
+    <loc>https://kuihao.github.io/blog/blog/2022/04/05/oh-my-posh/Oh_My_Posh_powershell_%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/</loc>
     <lastmod>2022-04-05</lastmod>
   </url>
   <url>
@@ -9,7 +9,7 @@
     <lastmod>2022-04-05</lastmod>
   </url>
   <url>
-    <loc>https://kuihao.github.io/blog/blog/2022/04/05/2022q1_Homework1_lab0/</loc>
+    <loc>https://kuihao.github.io/blog/blog/2022/04/05/linux2022/2022q1_Homework1_lab0/</loc>
     <lastmod>2022-04-05</lastmod>
   </url>
   <url>
@@ -17,7 +17,7 @@
     <lastmod>2022-04-05</lastmod>
   </url>
   <url>
-    <loc>https://kuihao.github.io/blog/blog/2022/04/05/oh_my_posh_changeTheme/</loc>
+    <loc>https://kuihao.github.io/blog/blog/2022/04/05/oh-my-posh/oh_my_posh_changeTheme/</loc>
     <lastmod>2022-04-05</lastmod>
   </url>
   <url>
@@ -29,11 +29,7 @@
     <lastmod>2022-04-04</lastmod>
   </url>
   <url>
-    <loc>https://kuihao.github.io/blog/blog/2022/04/03/First-Artical/</loc>
-    <lastmod>2022-04-03</lastmod>
-  </url>
-  <url>
-    <loc>https://kuihao.github.io/blog/blog/2022/04/03/hello-world/</loc>
+    <loc>https://kuihao.github.io/blog/blog/2022/04/03/Hexo/</loc>
     <lastmod>2022-04-03</lastmod>
   </url>
 </urlset> 

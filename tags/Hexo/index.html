@@ -101,10 +101,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://kuihao.github.io/blog/blog/2022/04/03/hello-world/">
+  <link rel="canonical" href="https://kuihao.github.io/blog/blog/tags/Hexo/">
   <title>
     
-      Hello World - Kuihao&#39;s Blog
+      Kuihao&#39;s Blog
     
   </title>
 <meta name="generator" content="Hexo 6.1.0"></head>
@@ -252,7 +252,29 @@
           <!-- LangSelect -->
           
           
-          
+          <!-- LangSelect start -->
+          <!-- LangSelect -->
+<li>
+  <a id="lang-select-label"><i class="fa fa-globe"></i>
+    <span>
+      正體中文
+    </span>
+    <select id="lang-select" data-canonical="tags/Hexo/index.html">
+      
+      
+      <option value="zh-TW"  selected >
+        正體中文
+      </option>
+      
+      <option value="en" >
+        English
+      </option>
+      
+    </select>
+  </a>
+</li>
+
+          <!-- LangSelect end -->
           
           
         </ul>
@@ -313,9 +335,9 @@
     }
 
     header.intro-header {
-       /*post*/
-        background-image: var(--intro-header-background-image-url-post);
-        /* background-image: url(''); */
+       /*page*/
+        background-image: var(--intro-header-background-image-url-page);
+        /* background-image: url('/blog/img/header_img/eng_magzine_shrink.JPG'); */
       
     }
 
@@ -333,40 +355,15 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="post-heading">
-            <div class="tags">
-              
-            </div>
-            <h1>Hello World</h1>
-            <h2 class="subheading"></h2>
-            <span class="meta">
-              Posted by Kuihao on
-              2022-04-03
-            </span>
-
-
+          <div class="site-heading">
+            <h1>Kuihao&#39;s Blog</h1>
+            <!--<hr class="small">-->
+            <span class="subheading" style="background-color:rgba(145,145,145,0.6)">This blog only update my essence collection.</span>
             
-            <!-- WordCount start -->
-            <div class="blank_box"></div>
-            <span class="meta">
-              Estimated Reading Time <span class="post-count">1</span> Minutes
-            </span>
-            <div class="blank_box"></div>
-            <span class="meta">
-              Words <span class="post-count">80</span> In Total
-            </span>
-            <div class="blank_box"></div>
-            <!-- WordCount end -->
+              <a class="subheading" href="https://hackmd.io/@Kuihao" target="_blank" style="color:#b0fcff;">
+                To see all, go to my HackMD
+              </a>
             
-            
-            <!-- 不蒜子统计 start -->
-            <span class="meta" id="busuanzi_container_page_pv">
-              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
-            </span>
-            <!-- 不蒜子统计 end -->
-            
-
-
           </div>
           
         </div>
@@ -407,274 +404,291 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Modify by Yu-Hsuan Yen -->
-<!-- Post Content -->
-<article>
-  <div class="container">
-    <div class="row">
-      <!-- Post Container -->
-      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+		<!-- page.ejs 就是主頁面顯示近期文章摘要的部分 -->
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    
 
-        <!-- Modify by Kuihao Chang -->
-        
-        <!-- The original markdown content -->
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <!-- USE SIDEBAR -->
+    <!-- Post Container -->
+    <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
 
-        
-        <hr>
-        <!-- Pager -->
-        <ul class="pager">
+      <!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
+      <!-- 归档列表 -->
+
+      
+
+      <!-- 归档列表 -->
+      
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2022">
+          <span class="tag-text">2022</span>
+        </span>
+        <ul>
           
-          <li class="previous">
-            <a href="/blog/2022/04/03/First-Artical/" data-toggle="tooltip" data-placement="top"
-              title="Hexo 很棒嗎? 靜態網站建置與維護">&larr; Previous Post</a>
+          <li>
+            04-05
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/blog/2022/04/05/oh-my-posh/Oh_My_Posh_powershell_顯示亂碼/" style="color: #0085a1">
+              <span>
+                Oh My Posh powershell 顯示亂碼
+                
+                -- zh-TW
+                
+              </span>
+            </a>
           </li>
           
+          <li>
+            04-05
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/blog/2022/04/05/JetsonNano_Docker_and_JupyterLab/" style="color: #0085a1">
+              <span>
+                JetsonNano Docker and JupyterLab
+                
+                -- zh-TW
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            04-05
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/blog/2022/04/05/linux2022/2022q1_Homework1_lab0/" style="color: #0085a1">
+              <span>
+                2022q1 Homework1 (lab0)
+                
+                -- zh-TW
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            04-05
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/blog/2022/04/05/C_operator/" style="color: #0085a1">
+              <span>
+                邏輯運算子的妙用
+                
+                -- zh-TW
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            04-05
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/blog/2022/04/05/oh-my-posh/oh_my_posh_changeTheme/" style="color: #0085a1">
+              <span>
+                Powershell oh my posh 自訂主題
+                
+                -- zh-TW
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            04-05
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/blog/2022/04/05/Sigmoid-derive-Softmax/" style="color: #0085a1">
+              <span>
+                Sigmoid 推導至 Softmax
+                
+                -- zh-TW
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            04-04
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/blog/2022/04/04/First-Artical/" style="color: #0085a1">
+              <span>
+                Is Hexo awesome? Static website construction and maintenance
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            04-03
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/blog/2022/04/03/Hexo/" style="color: #0085a1">
+              <span>
+                Hexo 很棒嗎? 靜態網站建置與維護
+                
+                -- zh-TW
+                
+              </span>
+            </a>
+          </li>
           
         </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
-        
 
-        
-        <!-- Sharing Srtart -->
-        <!-- Social Social Share Post -->
-<!-- Docs:https://github.com/overtrue/share.js -->
+      <!-- 如果开启评论功能 -->
+      
+    </div>
 
-<div class="social-share" data-initialized="true" data-disabled="tencent, douban, qzone, linkedin, google, diandian, qq" data-wechat-qrcode-helper="" align="center">
-  <ul class="list-inline text-center social-share-ul">
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-twitter">
-        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <!-- facebook 超連結有問題 待修
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-facebook">
-        <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a class="social-share-icon icon-wechat">
-        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-weibo">
-        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    -->
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon" href="mailto:?subject=Hello World&body=Hi,I found this website and thought you might like it https://kuihao.github.io/blog/blog/2022/04/03/hello-world/">
-        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
+    <!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+        <!-- Short About -->
+<section class="visible-md visible-lg">
+  <h5><a href="/blog/about/">關於我</a></h5>
+  <div class="short-about">
+
+    
+    <img id="avatar_pic" src="/blog/img/avatar/photo.png" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
+    
+
+    
+    <p>Expertise in information technology and tourism. Student from Taiwan. =w=</p>
+    
+
+    <!-- SNS Link -->
+    <ul class="list-inline">
+      
+
+      
+      <li>
+        <a target="_blank" href="https://github.com/Kuihao">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+    </ul>
+  </div>
+</section>
+
+        <hr>
+    
+        <!-- Featured Tags -->
+
+<section>
+  <h5><a href="/blog/tags/">特色標籤</a></h5>
+  <div class="tags">
+    
+    
+    <a href="/blog/tags/#hello-world" title="hello-world" rel="1">hello-world</a>
+    
+    
+    
+    <a href="/blog/tags/#C,C++" title="C,C++" rel="1">C,C++</a>
+    
+    
+    
+    <a href="/blog/tags/#Hexo" title="Hexo" rel="1">Hexo</a>
+    
+    
+    
+    <a href="/blog/tags/#JetsonNano,Docker,JupyterLab" title="JetsonNano,Docker,JupyterLab" rel="1">JetsonNano,Docker,JupyterLab</a>
+    
+    
+    
+    <a href="/blog/tags/#sigmoid,softmax" title="sigmoid,softmax" rel="1">sigmoid,softmax</a>
+    
+    
+    
+    <a href="/blog/tags/#linux,linux2022" title="linux,linux2022" rel="1">linux,linux2022</a>
+    
+    
+    
+    <a href="/blog/tags/#Oh-My-Posh,powershell 顯示亂碼" title="Oh-My-Posh,powershell 顯示亂碼" rel="1">Oh-My-Posh,powershell 顯示亂碼</a>
+    
+    
+    
+    <a href="/blog/tags/#Oh-My-Posh,Powershell" title="Oh-My-Posh,Powershell" rel="1">Oh-My-Posh,Powershell</a>
+    
+    
+  </div>
+</section>
+
+
+        <hr>
+    
+        <!-- RECENT POSTS -->
+
+<h5><a href="/blog/">最新貼文</a></h5>
+<div class="widget">
+  <ul>
+    
+    <a href="../../2022/04/05/oh-my-posh/Oh_My_Posh_powershell_%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/">
+      <li>Oh My Posh powershell 顯示亂碼</li>
+    </a>
+    
+    <a href="../../2022/04/05/JetsonNano_Docker_and_JupyterLab/">
+      <li>JetsonNano Docker and JupyterLab</li>
+    </a>
+    
+    <a href="../../2022/04/05/linux2022/2022q1_Homework1_lab0/">
+      <li>2022q1 Homework1 (lab0)</li>
+    </a>
+    
+    <a href="../../2022/04/05/C_operator/">
+      <li>邏輯運算子的妙用</li>
+    </a>
+    
+    <a href="../../2022/04/05/oh-my-posh/oh_my_posh_changeTheme/">
+      <li>Powershell oh my posh 自訂主題</li>
+    </a>
+    
   </ul>
 </div>
 
-<!-- css & js -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
-<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 
-        <!-- Sharing End -->
-        
         <hr>
-
-        <!-- comments start -->
-        <!-- 1. gitalk comment -->
-
-  <!-- gitalk start -->
-  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
-
-  <div id="gitalk-container"></div>
-
-  
-    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
-    <script src="/blog/js/comment/gitalk.js"></script>
-  
-
-  <script>
-    var gitalk = new Gitalk({
-      clientID: '',
-      clientSecret: '',
-      repo: '',
-      owner: '',
-      admin: '',
-      id: 'Sun Apr 03 2022 12:00:00 GMT+0000', // Ensure uniqueness and length less than 50
-      distractionFreeMode: false, // Facebook-like distraction free mode
-      perPage: 10,
-      pagerDirection: 'last',
-      createIssueManually: false,
-      language: 'en',
-      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
-    });
-    gitalk.render('gitalk-container');
-
-    var gtFolded = () => {
-      setTimeout(function () {
-        let markdownBody = document.getElementsByClassName("markdown-body");
-        let list = Array.from(markdownBody);
-        list.forEach(item => {
-          if (item.clientHeight > 250) {
-            item.classList.add('gt-comment-body-folded');
-            item.style.maxHeight = '250px';
-            item.title = 'Click to Expand';
-            item.onclick = function () {
-              item.classList.remove('gt-comment-body-folded');
-              item.style.maxHeight = '';
-              item.title = '';
-              item.onclick = null;
-            };
-          }
-        })
-      }, 800);
-    }
-  </script>
-
-  <!-- gitalk end -->
+    
+</div>
 
 
-<!-- 2. gitment comment -->
-
-
-<!-- 3. disqus comment -->
-
-
-        <!-- comments end -->
-        <hr>
-
-      </div>
-
-      <!-- Catalog: Tabe of Content -->
-      <!-- Table of Contents -->
-
-
-
-      <!-- Sidebar Container -->
-      <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-        <!-- Featured Tags -->
-        
-        <section>
-          <!-- no hr -->
-          <h5>
-            <a href="/blog/tags/">特色標籤</a>
-          </h5>
-          <div class="tags">
-            
-          </div>
-        </section>
-        
-
-        <!-- Friends Blog -->
-        <!-- Kuihao: 關閉 post page 的 friend 功能
-        
-        <hr>
-        <h5>摯友</h5>
-        <ul class="list-inline">
-
-          
-          <li>
-            <a href="" target="_blank"></a>
-          </li>
-          
-          <li>
-            <a href="" target="_blank"></a>
-          </li>
-          
-          <li>
-            <a href="" target="_blank"></a>
-          </li>
-          
-          <li>
-            <a href="https://hexo.io/" target="_blank">Hexo</a>
-          </li>
-          
-        </ul>
-        
-        -->
-      </div>
-    </div>
+    
   </div>
-</article>
-
-<!-- Modify by Kuihao -->
-<!--
-<script>
-  /* Kuihao feature: 可以取得指定 iframe 網頁的實際高度 (由捲動條高度得知) */
-  /* 可惜因為同源政策，只對 same domain 的 iframe 有效 */
-  function real_dynamic_iframe_height() {
-    // Find the height of the internal page (iframe)
-    var the_height = document.getElementById('TargetFrame').contentWindow.document.body.scrollHeight;
-    // Change the height of iframe element
-    document.getElementById("TargetFrame").height = the_height;
-    document.getElementById("AnswerBox").innerHTML= the_height;
-  };
-</script>
--->
-
-
-<!-- anchorjs start -->
-<!-- async load function -->
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script type="text/javascript">
-  // async load function
-  function async (u, c) {
-    var d = document,
-      t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) {
-      o.addEventListener('load', function(e) {
-        c(null, e);
-      }, false);
-    }
-    s.parentNode.insertBefore(o, s);
-  };
-</script>
-<script type="text/javascript">
-  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
-  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
-    anchors.options = {
-      visible: 'hover',
-      placement: 'left',
-      // icon: 'ℬ'
-      icon: '❡'
-    };
-    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-  });
-</script>
-<style>
-  /* place left on bigger screen */
-  @media all and (min-width: 800px) {
-    .anchorjs-link {
-      position: absolute;
-      left: -0.75em;
-      font-size: 1.1em;
-      margin-top: -0.1em;
-    }
-  }
-</style>
-
-<!-- anchorjs end -->
-
+</div>
 
 		<!-- Footer (contains ThemeColor、viewer) -->
 		<!-- Footer -->
