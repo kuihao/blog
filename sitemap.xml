@@ -135,14 +135,28 @@
   </url>
   
   <url>
-    <loc>https://kuihao.github.io/blog/tags/C-C/</loc>
+    <loc>https://kuihao.github.io/blog/tags/C/</loc>
     <lastmod>2022-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://kuihao.github.io/blog/tags/JetsonNano-Docker-JupyterLab/</loc>
+    <loc>https://kuihao.github.io/blog/tags/C/</loc>
+    <lastmod>2022-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuihao.github.io/blog/tags/JetsonNano/</loc>
+    <lastmod>2022-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuihao.github.io/blog/tags/Docker-JupyterLab/</loc>
     <lastmod>2022-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -163,21 +177,42 @@
   </url>
   
   <url>
-    <loc>https://kuihao.github.io/blog/tags/linux-linux2022/</loc>
+    <loc>https://kuihao.github.io/blog/tags/linux/</loc>
     <lastmod>2022-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://kuihao.github.io/blog/tags/Oh-My-Posh-powershell-%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/</loc>
+    <loc>https://kuihao.github.io/blog/tags/linux2022/</loc>
     <lastmod>2022-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://kuihao.github.io/blog/tags/Oh-My-Posh-Powershell/</loc>
+    <loc>https://kuihao.github.io/blog/tags/Oh-My-Posh/</loc>
+    <lastmod>2022-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuihao.github.io/blog/tags/powershell/</loc>
+    <lastmod>2022-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuihao.github.io/blog/tags/%E9%A1%AF%E7%A4%BA%E4%BA%82%E7%A2%BC/</loc>
+    <lastmod>2022-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuihao.github.io/blog/tags/Powershell/</loc>
     <lastmod>2022-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
