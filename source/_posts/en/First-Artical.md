@@ -1,7 +1,7 @@
 ---
 title: Is Hexo awesome? Static website construction and maintenance
 date: 2022-04-04 11:50:00
-tags: hello-world
+tags: Hexo
 catalog: true # Table of Contents (TOC) 快捷鉚釘
 sticky: 999
 ---
