@@ -1,7 +1,7 @@
 ---
 title: Oh My Posh powershell 顯示亂碼
 date: 2022-04-05 23:34:00
-tags: Oh-My-Posh,powershell 顯示亂碼
+tags: ['Oh-My-Posh','powershell','顯示亂碼']
 catalog: true # Table of Contents (TOC) 快捷鉚釘
 #sticky: 999
 #ExternalLink: 

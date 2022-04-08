@@ -1,7 +1,7 @@
 ---
 title: JetsonNano Docker and JupyterLab
 date: 2022-04-05 23:33:00
-tags: JetsonNano,Docker,JupyterLab
+tags: ['JetsonNano','Docker,JupyterLab']
 catalog: true # Table of Contents (TOC) 快捷鉚釘
 #sticky: 999
 #ExternalLink: 

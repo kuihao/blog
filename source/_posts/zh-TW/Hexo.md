@@ -1,7 +1,7 @@
 ---
 title: Hexo 很棒嗎? 靜態網站建置與維護
 date: 2022-04-03 13:49:13
-tags: Hexo
+tags: ['Hexo']
 catalog: true
 ---
 # 靜態網站 Hexo
