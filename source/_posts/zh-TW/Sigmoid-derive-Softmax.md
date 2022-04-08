@@ -1,11 +1,11 @@
 ---
 title: Sigmoid 推導至 Softmax
 date: 2022-04-05 12:52:00
-tags: sigmoid softmax
-catalog: true # Table of Contents (TOC) 快捷鉚釘
+tags: sigmoid,softmax
+catalog: false # Table of Contents (TOC) 快捷鉚釘
 sticky: 999
 ExternalLink: https://hackmd.io/@Kuihao/Softmax_Derive
-showScroll: no
+showScroll: yes
 iframeHight: 5500px
 # header-img: ""
 ---

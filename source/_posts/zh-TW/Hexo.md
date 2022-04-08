@@ -1,7 +1,8 @@
 ---
 title: Hexo 很棒嗎? 靜態網站建置與維護
 date: 2022-04-03 13:49:13
-tags: hello-world
+tags: Hexo
+catalog: true
 ---
 # 靜態網站 Hexo
 > Hexo 是靜態網站框架，可以協助作者快速建立專業好看的部落格
