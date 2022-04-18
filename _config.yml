@@ -325,7 +325,7 @@ themecolor:
 
 # Mouseclick config
 mouseclick:
-  enable: true
+  enable: false
   content:
     - 這是自由與平等
     - 誕生到這世上的聲響
