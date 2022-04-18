@@ -365,7 +365,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">414</span> In Total
+              Words <span class="post-count">460</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -433,7 +433,7 @@
         <h1>How to join conda env into jupyter notebook</h1>
 <p>來源:</p>
 <ol>
-<li><a target="_blank" rel="noopener" href="https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084">ref.</a></li>
+<li><a target="_blank" rel="noopener" href="https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084">ref. medium</a></li>
 <li><a target="_blank" rel="noopener" href="https://ipython.readthedocs.io/en/stable/install/kernel_install.html">ipython doc</a></li>
 <li><a target="_blank" rel="noopener" href="https://jupyter.org/install">https://jupyter.org/install</a></li>
 </ol>
@@ -473,11 +473,20 @@
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda activate myenv <span class="comment"># `source activate myenv` in linux, 若已開啟 myenv 則不用這行</span></span><br><span class="line">conda install pip</span><br><span class="line">conda install ipykernel <span class="comment"># or pip install ipykernel</span></span><br></pre></td></tr></table></figure>
 <p>可透過已下命令，可查看目前虛擬環境允許被 jupyter 連動 (當啟動 jyputer notebook 會自動帶入此環境為 jyputer kernel)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">jupyter kernelspec list</span><br><span class="line">``````</span><br><span class="line">4. Install a `Python environment Kernel` <span class="keyword">in</span> a myenv.</span><br><span class="line">```bash </span><br><span class="line">conda activate myenv <span class="comment"># `source activate myenv` in linux, 若已開啟 myenv 則不用這行 </span></span><br><span class="line">python -m ipykernel install --user --name &lt;this-myenv-name&gt; --display-name <span class="string">&quot;name-you-want-show-in-notebook&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter kernelspec list</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>Install a <code>Python environment Kernel</code> in a myenv.</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda activate myenv <span class="comment"># `source activate myenv` in linux, 若已開啟 myenv 則不用這行 </span></span><br><span class="line">python -m ipykernel install --user --name &lt;this-myenv-name&gt; --display-name <span class="string">&quot;name-you-want-show-in-notebook&quot;</span></span><br></pre></td></tr></table></figure>
 <p>當然，你也可以為其他虛擬環境增加 ipykernel (使 jupyter notebook 可以使用此 env 作為 kernel)</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda activate other-env <span class="comment"># `source activate other-env` in linux, 若已開啟 myenv 則不用這行 </span></span><br><span class="line">python -m ipykernel install --user --name &lt;this-env-name&gt; --display-name <span class="string">&quot;Python (other-env)&quot;</span></span><br></pre></td></tr></table></figure>
 <hr>
 <p>移除 ipykernel</p>
+<ul>
+<li>列出目前 jupyter 追蹤的虛擬環境與其路徑 (光是刪除 conda env 是無效的，還必須將其從清單中移除)</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter kernelspec list</span><br></pre></td></tr></table></figure>
+<p>移除對應的 env-name</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter kernelspec remove &lt;myenv&gt;</span><br></pre></td></tr></table></figure>
         
         <hr>
