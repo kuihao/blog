@@ -3,7 +3,7 @@ title: Is Hexo awesome? Static website construction and maintenance
 date: 2022-04-04 11:50:00
 tags: Hexo
 catalog: true # Table of Contents (TOC) 快捷鉚釘
-sticky: 999
+#sticky: 999
 ---
 # Static website **Hexo**
 > Hexo is a static website framework that helps authors quickly build professional-looking blogs
