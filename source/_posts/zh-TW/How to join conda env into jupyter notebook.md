@@ -11,7 +11,7 @@ sticky: 999
 ---
 # How to join conda env into jupyter notebook
 來源:
-1. [ref.](https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084)
+1. [ref. medium](https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084)
 2. [ipython doc](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
 3. https://jupyter.org/install
 
@@ -73,7 +73,7 @@ conda install ipykernel # or pip install ipykernel
 可透過已下命令，可查看目前虛擬環境允許被 jupyter 連動 (當啟動 jyputer notebook 會自動帶入此環境為 jyputer kernel)
 ```bash 
 jupyter kernelspec list
-``````
+```
 4. Install a `Python environment Kernel` in a myenv.
 ```bash 
 conda activate myenv # `source activate myenv` in linux, 若已開啟 myenv 則不用這行 
@@ -87,6 +87,11 @@ python -m ipykernel install --user --name <this-env-name> --display-name "Python
 ---
 
 移除 ipykernel
+* 列出目前 jupyter 追蹤的虛擬環境與其路徑 (光是刪除 conda env 是無效的，還必須將其從清單中移除)
+```linux 
+jupyter kernelspec list
+```
+移除對應的 env-name
 ```linux 
 jupyter kernelspec remove <myenv>
 ```
